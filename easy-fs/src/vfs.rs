@@ -14,6 +14,7 @@ use alloc::vec::Vec;
 use spin::{Mutex, MutexGuard};
 
 /// Virtual filesystem layer over easy-fs
+/// 提供虚拟文件系统的核心抽象，即索引节点 Inode
 pub struct Inode {
     block_id: usize,
     block_offset: usize,

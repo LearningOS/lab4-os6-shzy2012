@@ -8,6 +8,7 @@ use lazy_static::*;
 use spin::Mutex;
 
 /// Cached block inside memory
+/// 块缓存层，将块设备中的部分块缓存在内存中
 pub struct BlockCache {
     /// cached block data
     cache: [u8; BLOCK_SZ],

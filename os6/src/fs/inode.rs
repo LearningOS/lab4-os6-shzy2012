@@ -1,4 +1,5 @@
-use super::{File, StatMode};
+use super::File;
+use super::StatMode;
 use crate::drivers::BLOCK_DEVICE;
 use crate::mm::UserBuffer;
 use crate::sync::UPSafeCell;
